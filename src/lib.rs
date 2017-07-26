@@ -223,9 +223,9 @@ impl<'text> InitialInfo<'text> {
         #[cfg(feature = "flame_it")] flame::end("InitialInfo::new(): iter text.char_indices()");
 
         InitialInfo {
-            text,
-            original_classes,
-            paragraphs,
+            text: text,
+            original_classes: original_classes,
+            paragraphs: paragraphs,
         }
     }
 }
@@ -300,10 +300,10 @@ impl<'text> BidiInfo<'text> {
         }
 
         BidiInfo {
-            text,
-            original_classes,
-            paragraphs,
-            levels,
+            text: text,
+            original_classes: original_classes,
+            paragraphs: paragraphs,
+            levels: levels,
         }
     }
 
